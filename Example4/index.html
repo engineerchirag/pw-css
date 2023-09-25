@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        .female {
+            color: red;
+        }
+        */
+        .female { /* 010 */
+            color: blue;
+        }
+
+        .female { /* 1010 */
+            color: blue !important;
+        }
+
+        #delhi .female { /* 110 */
+            color: red;
+        }
+
+        .ndls .female {  /* 020 */
+            color: brown;
+        }
+
+        .india #delhi h4.female {  /* 121 */
+            color: green;
+        }
+
+        #bharat .ndls .female {  /* 120 */
+            color: purple;
+        }
+
+        #bharat #delhi h4.female { /* 211 */
+            color: orange;
+        }
+
+        .india .ndls .female { /* 030 */
+            color: yellow;
+        }
+
+        div h4{ /* 002 */
+            color: black;
+        }
+
+        h4.female {  /* 011 */
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="india" id="bharat">
+        <h1>karnataka</h1>
+        <div id="karnataka">
+            <div>
+                <h4 class="female">Female</h4>
+                <h4 class="female">Female</h4>
+                <h4 class="male">Male</h4>
+                <h4 class="female">Female</h4>
+                <h4 class="male">Male</h4>
+            </div>  
+            <h4 class="female">Female</h4>
+            <h4 class="female">Female</h4>
+        </div>
+        <h1>Delhi</h1>
+        <div id="delhi" class="ndls">
+            <h4 class="female">Female</h4>
+            <h4 class="female">Female</h4>
+            <h4 class="male">Male</h4>
+            <h4 class="female">Female</h4>
+            <h4 class="male">Male</h4>
+        </div>
+        <h1>gujrat</h1>
+        <div id="gujrat">
+            <h4 class="female">Female</h4>
+            <h4 class="female">Female</h4>
+            <h4 class="male">Male</h4>
+            <h4 class="female">Female</h4>
+            <h4 class="male">Male</h4>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*
+- CSS peek
+- Color highlight
+- Image preview
+- HTML CSS support
+- HTML to CSS autocompletion
+- Stylelint
+- Intellisense for CSS Class Names
+*/
+
+
+/*
+h1 {
+    color: red;
+} 
+*/
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.title {
+    color: yellow;
+}
+
+/*
+.sub-title {
+    color: green;
+}
+*/
+
+#pw-subtitle {
+    color: green;
+}
+
+.banner {
+    width: 600px;
+    height: 200px;
+    background-color: yellow;
+    background-image: url('https://media.licdn.com/dms/image/D5616AQFnESIfVSytig/profile-displaybackgroundimage-shrink_200_800/0/1673038042307?e=2147483647&v=beta&t=72_s9pxPNId_Lwx8UN_mAXqrO1ukU7fdS1nQq1PAPtY');
+}
