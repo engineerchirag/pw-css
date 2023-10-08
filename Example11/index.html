@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+            grid-template-areas: 
+                'HEADER HEADER HEADER HEADER HEADER'
+                'MENU MAIN MAIN MAIN RIGHT'
+                'MENU MAIN MAIN MAIN RIGHT'
+                'MENU MAIN MAIN MAIN RIGHT'
+                'MENU MAIN MAIN MAIN RIGHT'
+                'MENU MAIN MAIN MAIN RIGHT'
+                'MENU MAIN MAIN MAIN RIGHT'
+                'MENU FOOTER FOOTER FOOTER FOOTER'
+            ;
+        }
+
+        .header {
+            grid-area: HEADER;
+            background-color: yellow;
+        }
+        .menu {
+            grid-area: MENU;
+            background-color: green;
+        }
+        .main {
+            grid-area: MAIN;
+            background-color: orange;
+        }
+        .right {
+            grid-area: RIGHT;
+            background-color: blue;
+        }
+        .footer {
+            grid-area: FOOTER;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="menu"></div>
+        <div class="main"></div>
+        <div class="right"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

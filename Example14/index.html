@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent {
+            background-color: gray;
+        }
+        .child {
+            background-color: yellow;
+            width: 25%;
+            height: 200px;
+            display: inline-block;
+            float: left;
+            border: 1px solid black;
+        }
+
+        @media (min-width: 1200px) {
+            .child {
+                width: 25%;
+            }
+        }
+
+        @media (min-width: 700px) and (max-width: 1200px) {
+            .child {
+                width: 33.33%;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 700px) {
+            .child {
+                width: 50%;
+            }
+        }
+        @media (max-width: 400px) {
+            .child {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+</body>
+</html>
