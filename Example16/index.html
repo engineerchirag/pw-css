@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .buy-now {
+            padding: 8px 10px;
+            border-radius: 20px;
+            background-color: rgb(255, 216, 20);
+            width: 150px;
+            border: none;
+            font-size: 13px;
+            cursor: pointer;
+       } 
+
+       .buy-now:hover {
+            border: 1px solid rgb(182, 159, 42);
+            background-color: rgb(240, 202, 12);
+       }
+       .buy-now-link {
+        text-decoration: none;
+       }
+       .buy-now-link:hover {
+        text-decoration: underline;
+       }
+       .buy-now-link:visited {
+        color: rgb(49, 49, 111);
+       }
+
+       .fruit-list li:nth-child(1) {
+        color: yellow;
+       }
+       .fruit-list li:nth-child(3) {
+        color: red;
+       }
+       .fruit-list li:nth-child(4) {
+        color: green;
+       }
+
+       .fruit-list li:first-child {
+        color: green;
+       }
+       .fruit-list li:last-child {
+        color: brown;
+       }
+
+       .fruit-list li:not(li:nth-child(4)) {
+        text-decoration: underline;
+       }
+       table {
+        border-collapse: collapse;
+       }
+       table td{
+        border: 1px solid #ccc;
+       }
+
+       table tr:nth-child(even){ 
+        background-color: #ccc;
+       }
+
+       .dropdown span:nth-child(1)::before {
+        color: red;
+        content: "►";
+       }
+
+       .dropdown span:nth-child(2)::after {
+        color: green;
+        content: "▼";
+       }
+
+    </style>
+</head>
+<body>
+    <a href="#" class="buy-now-link">Buy Now</a>
+    <a href="#SDFSD" class="buy-now-link">Buy Now 1</a>
+    <form>
+        <input type="text" placeholder="Enter Name" />
+        <div><label>Required</label><input type="checkbox"  /></div>
+    </form>
+    <button class=buy-now>Buy Now</button>
+
+    <ul class="fruit-list">
+        <li class="mango">1. Mango</li>
+        <li>2. Grapes</li>
+        <li>3. Apple</li>
+        <li>4. Banana</li>
+        <li>5. Dragon Fruit</li>
+    </ul>
+
+    <table>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td>Amit</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Arurag</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Rahmat</td>
+                <td>5cr</td>
+            </tr>
+            <tr>
+                <td>Kudeep</td>
+                <td>10M</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="dropdown">
+        <span>Open</span>
+        <span>Collapse</span>
+    </div>
+</body>
+</html>
