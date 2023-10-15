@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue-theme {
+            --content-bg-color: blue;
+            --content-color: yellow;
+        }
+        .black-theme {
+            --content-bg-color: black;
+            --content-color: white;
+        }
+        .light-theme {
+            --content-bg-color: white;
+            --content-color: black;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: max(1600px, 100vw);
+            height: 100vh;
+            background-color: var(--content-bg-color);
+            color: var(--content-color);
+            margin: auto;
+            
+        }
+        .container a {
+            color:var(--content-color);
+        }
+        .leftBar {
+            width: 250px;
+            height: 100vh;
+            border: 1px solid var(--content-color);
+            display: inline-block;
+            
+        }
+        .rightBar {
+            width: calc(100% - 250px);
+            height: 100vh;
+            display: inline-block;
+            float: right;
+        }
+        .rightBar p a::after {
+            content:  "(" attr(data-id) ")";
+        }
+ 
+    </style>
+</head>
+<body class="blue-theme">
+    <div class="container">
+        <div class="leftBar">
+            <ul>
+                <li><a href="http://www.google.com/home">Home</a></li>
+                <li><a href="http://www.google.com/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="rightBar">
+            <p>Medium 26 L Laptop Backpack Apex Laptop Backpack  (Black)
+                <a href="http://www.google.com/" data-id="Uasdfdsf">Read more.</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
